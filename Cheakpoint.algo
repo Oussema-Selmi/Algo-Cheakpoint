@@ -1,0 +1,23 @@
+ALGORITHM Counting 
+VAR
+    var Sentence = "how long is this sentence.";
+    var TotChar = 0;
+    var TotWords = 1;
+    var TotVowels = 0;
+BEGIN
+    for (let i=0 ;i<>"." ;i++){
+        if (sentence[i]=CHAR){
+            TotChar++
+        }
+        if (sentence[i]=" "){
+            TotWords++
+        }
+        if (sentence[i]="a" OR "e" OR "i" OR "o" OR "u" OR "A" OR "E" OR "I" OR "O" OR "U"){
+            TotWords++
+        }
+    }
+
+    PRINT ("The length of the sentence is : " + TotChar)
+    PRINT ("The number of words in the sentence is : " + TotWords)
+    PRINT ("The number of vowels in the sentence is : " + TotVowels)
+END
